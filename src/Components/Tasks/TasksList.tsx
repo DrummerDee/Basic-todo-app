@@ -12,7 +12,9 @@ const Tasks = ({tasks,setTasks}: Props) => {
   return (
     <section>
         {tasks.map(task => (
-            <Single task={task} key={task.id}
+            <Single 
+            task={task} 
+            key={task.id}
             tasks={tasks}
             setTasks={setTasks}/>
         ))}

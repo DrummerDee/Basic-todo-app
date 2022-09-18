@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Input from '../InputField/Input';
 import Header from '../Header/Header';
-import Tasks from '../Tasks/Tasks';
+import TasksList from '../Tasks/TasksList';
 
 //import task interface 
 import {Task} from '../taskModel';
@@ -29,7 +29,7 @@ console.log(tasks)
     <>
     <Header />
     <Input task={task} setTask={setTask} handleAddedTask={handleAddedTask}/>
-    <Tasks tasks={tasks} setTasks={setTasks}/>
+    <TasksList tasks={tasks} setTasks={setTasks}/>
     </>
   )
 }
