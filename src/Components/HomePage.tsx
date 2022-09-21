@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import Input from '../InputField/Input';
-import Header from '../Header/Header';
-import TasksList from '../Tasks/TasksList';
+import Input from './Input';
+import Header from './Header';
+import TasksList from './TasksList';
+import '../Styles/_main.scss'
 
 //import task interface 
-import {Task} from '../taskModel';
+import {Task} from './taskModel';
 
 
 const HomePage: React.FC = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import inputStyles from './input.module.css';
+import '../Styles/_main.scss'
 
 
 interface Props {
@@ -10,11 +10,11 @@ interface Props {
 const Input = ({task,setTask,handleAddedTask}: Props) => {
   return (
     <>
-    <form onSubmit={handleAddedTask}>
-    <input type='input' placeholder='Enter todo item ' 
+    <form className='input' onSubmit={handleAddedTask}>
+    <input type='input' placeholder='Enter todo item' className='input__field' 
     value={task}
     onChange={(e) => setTask(e.target.value)} />
-    <button type='submit'> Enter </button>
+    <button type='submit' className='submit'> Enter </button>
     </form>
     </>
   )

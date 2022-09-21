@@ -1,8 +1,9 @@
 import React , {useState} from 'react';
-import { Task } from '../taskModel';
+import { Task } from './taskModel';
 import {FaEdit, FaTrashAlt} from 'react-icons/fa';
 import {FcCheckmark} from 'react-icons/fc';
-import Tasks from '../Tasks/TasksList';
+import Tasks from './TasksList';
+import '../Styles/_main.scss'
 
 type Props = {
 task : Task,
@@ -43,6 +44,7 @@ const [editTask, setEditTask] = useState<string>(task.task)
     setEdit(false)
   };
   return (
+  
     <form onSubmit={(e) => handleEdit(e,task.id )}>
       {/*conditional rendering for edit mode, need input to display when edit button is clicked and if the task is not completed */}
         {
@@ -63,7 +65,7 @@ const [editTask, setEditTask] = useState<string>(task.task)
         <span>{task.task}</span>
       )
       } */}
-      <div>
+      <div className = 'options'>
         {/*will display the crud part of the todo */}
         <span className="icons" onClick={() => !edit && !task.isComplete ? setEdit(!edit) : !edit }><FaEdit/></span>
         <span className="icons" onClick={() => handleDeletion(task.id)}><FaTrashAlt/></span>

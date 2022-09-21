@@ -1,6 +1,6 @@
 import React from 'react';
-import Single from '../SingleTasks/Single';
-import { Task } from '../taskModel';
+import Single from './Single';
+import { Task } from './taskModel';
 import tasksStyles from './tasks.module.css';
 
 //declare type of tasks and setTasks with interface

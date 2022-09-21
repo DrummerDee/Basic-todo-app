@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import './App.css'
-import Main from './Components/Main/HomePage';
+import './Styles/_main.scss'
+import Main from './Components/HomePage';
 
 
 //React.FC is react functional component 
 const App: React.FC = () => {
   return (
     <>
-    <Main />
+    <Main/>
     </>
   )
 }
