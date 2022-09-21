@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import './Styles/_main.scss'
 import Main from './Components/HomePage';
+import './Styles/Global.css'
 
 
 //React.FC is react functional component 

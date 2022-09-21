@@ -3,7 +3,7 @@ import { Task } from './taskModel';
 import {FaEdit, FaTrashAlt} from 'react-icons/fa';
 import {FcCheckmark} from 'react-icons/fc';
 import Tasks from './TasksList';
-import '../Styles/_main.scss'
+
 
 type Props = {
 task : Task,

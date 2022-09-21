@@ -1,11 +1,11 @@
 import React from 'react';
-import '../Styles/_main.scss';
+import headerStyles from '../Styles/header.module.css';
 
 
 const Header: React.FC = () => {
     return (
         <main>
-            <h1 className='header_h1'> Welcome to TaskMe !</h1>
+            <h1 className={headerStyles.header}> Welcome to TaskMe !</h1>
             </main>
     )
 }

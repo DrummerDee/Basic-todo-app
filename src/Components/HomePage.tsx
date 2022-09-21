@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Input from './Input';
 import Header from './Header';
 import TasksList from './TasksList';
-import '../Styles/_main.scss'
+
 
 //import task interface 
 import {Task} from './taskModel';
